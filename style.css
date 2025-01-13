@@ -1,34 +1,56 @@
 html {
-  margin: 0;
-}
-
-span {
-  display: block;
-}
-.canvas {
-  margin: 100px auto 100px;
-  width: 80%;
-  text-align: center;
-}
-
-.button {
-  width: 100px;
-  height: 100px;
-  border: solid black 2px;
-  display: inline-block;
-}
-
-#grey {
-  background: grey;
-}
-
-#white {
-  background: white;
-}
-#blue {
-  background: blue;
-}
-#yellow {
-  background: yellow;
-}
-
+    margin: 0;
+  }
+  
+  /* General Styling */
+  * {
+    box-sizing: border-box; /* Include padding and border in width/height */
+  }
+  
+  body {
+    font-family: sans-serif; /* Choose a suitable font */
+    display: flex; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make body fill viewport height */
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  /* Canvas Styling */
+  .canvas {
+    text-align: center;
+  }
+  
+  /* Button Styling */
+  .button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px; /* Add some spacing between buttons */
+    transition: all 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .button:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Color-Specific Styling */
+  #grey {
+    background-color: #ccc; /* More descriptive color name */
+  }
+  
+  #pink {
+    background-color: #c71a90;
+  }
+  
+  #red {
+    background-color: #ff0000; /* Use a common blue color */
+  }
+  
+  #purple {
+    background-color: #d40bd7; /* Slightly more vibrant yellow */
+  }
+  
